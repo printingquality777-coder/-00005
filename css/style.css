@@ -183,68 +183,6 @@
     transform: scale(1.1);
 }
 
-/*** Testimonial ***/
-.faqs-carousel::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-.faqs-carousel::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-@media (min-width: 768px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 200px;
-    }
-}
-@media (min-width: 992px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 300px;
-    }
-}
-.faqs-carousel .owl-item .faq-text,
-.faqs-carousel .owl-item.center .faq-text * {
-    transition: .5s;
-}
-.faqs-carousel .owl-item.center .faq-text {
-    background: var(--primary) !important;
-}
-.faqs-carousel .owl-item.center .faq-text * {
-    color: #FFFFFF !important;
-}
-.faqs-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.faqs-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    transition: .5s;
-}
-.faqs-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
-}
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -315,4 +253,5 @@
 
 .img-fluid{
     min-width: 100%;
+
 }
